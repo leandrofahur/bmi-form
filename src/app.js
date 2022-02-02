@@ -16,14 +16,16 @@ app.use(express.static('public'));
  *
  */
 app.get('/', (req, res) => {
-  res.set('content-type', 'text/html');
   res.status(200).sendFile('index.html');
 });
 
 app.post('/', (req, res) => {
   const { height, weight } = req.body;
-  result = weight / (height * height);
-  res.set('content-type', 'application/json');
+  //console.log(height, weight);
+
+  const result = weight / (height * height);
+  //console.log(result);
+
   res.status(200).json({ result });
 });
 

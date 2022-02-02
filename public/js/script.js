@@ -2,17 +2,17 @@ const age = document.getElementById('age');
 const weight = document.getElementById('weight');
 const height = document.getElementById('height');
 const result = document.getElementById('result');
-const btn = document.getElementById('calc');
-const form = document.getElementById('form');
+const button = document.getElementById('calc');
 
-async function bmiCalc(event) {
-  event.preventDefault();
+async function action(e) {
+  e.preventDefault();
+
   const response = await fetch('http://localhost:3000/', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      weight: weight.value,
       height: height.value / 100,
+      weight: weight.value,
     }),
   });
 
@@ -22,5 +22,4 @@ async function bmiCalc(event) {
   ).toFixed(2)}`);
 }
 
-btn.addEventListener('submit', bmiCalc);
-form.addEventListener('submit', bmiCalc);
+button.addEventListener('click', (e) => action(e));
