@@ -6,7 +6,17 @@
 <br/>
 
 <h2>🏗<strong>Running the application</strong></h2>
-In order to run the application, one can just drag and drop the .html file into the browser.
+In order to run the application, first install the node_modules dependencies:
+
+```javascript
+$ npm i
+```
+
+Then, one can run the application with nodemon typing into one's terminal:
+
+```javascript
+$ npm run dev
+```
 
 <h2>📝 <strong>References</strong></h2>
 <ol>
