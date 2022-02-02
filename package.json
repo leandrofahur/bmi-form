@@ -1,0 +1,27 @@
+{
+  "name": "bmi-form",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\"><strong>ASSIGNMENT 02 - Templating BMI Calculator</strong></h1> <br> <br> <h2>🎯 <strong>Objective</strong></h2> <p>This repository intends to host the implementation of the second assignment from CSIS 3380.</p> <br/>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrofahur/bmi-form.git"
+  },
+  "keywords": [],
+  "author": "vegano foods",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandrofahur/bmi-form/issues"
+  },
+  "homepage": "https://github.com/leandrofahur/bmi-form#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
